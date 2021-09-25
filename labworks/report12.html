@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="full_name">Full Name:</label></td>
+                    <td><input type="text" id="full_name" placeholder="Enter your name"/></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address:</label></td>
+                    <td><input type="text" id="address" placeholder="Enter your address"/> </td>
+                </tr>
+                <tr>
+                    <td><label for="number">Contact Number:</label></td>
+                    <td><input type="number" id="number" placeholder="Enter your number"/></td>
+                </tr>
+                <tr>
+                    <td><label for="country">Country:</label></td>
+                    <td>
+                        <select>
+                            <option value="india">India</option>
+                            <option value="america">America</option>
+                            <option value="switzerland">Switzerland</option>
+                            <option value="nepal" selected>Nepal</option>
+                            <option value="bhutan">Bhutan</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="hobbies">Hobbies:</label></td>
+                    <td>
+                    <input type="checkbox" name="playing"/>
+                    <label for="hobbies">Playing</label>
+                    <input type="checkbox" name="reading"/>
+                    <label for="hobbies">Reading</label>
+                    <input type="checkbox" name="music"/>
+                    <label for="hobbies">Music</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Gender:</label></td>
+                    <td>
+                    <input type="radio" name="male"/>
+                    <label for="gender">Male</label>
+                    <input type="radio" name="female"/>
+                    <label for="gender">Female</label>
+                    <input type="radio" name="other"/>
+                    <label for="gender">Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit"/></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

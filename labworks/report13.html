@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Information</title>
+    </head>
+        <body>
+                <form>
+                    <fieldset>
+                            <legend>Your Details</legend>
+                                <ol>
+                                    <li>
+                                        <label for="name">Name</label>
+                                        <input id="name" type="text" placeholder="Your Name"><br/>
+                                    </li>
+                                    <li>
+                                        <label for="Email">Email</label>
+                                        <input id="Email" type="text" placeholder="Your Email"><br/>
+                                    </li>
+                                    <li>
+                                        <label for="number">Phone</label>
+                                        <input type="number" placeholder="Your Number">
+                                    </li>
+                                </ol>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Delivery Address</legend>
+                            <ol>
+                                <li>
+                                    <label for="address">Address</label>
+                                    <textarea cols="30" rows="3"></textarea> <br/>
+                                </li>
+                                <li>
+                                    <label for="number">Postal Code</label>
+                                    <input type="number"><br/>
+                                </li>
+                                <li>
+                                    <label for="Country">Country</label>
+                                    <input type="text"><br/>
+                                </li>
+                            </ol>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Card Details</legend>
+                            <ol>
+                                <li>
+                                    <fieldset>
+                                        <legend>Card Type</legend>
+                                            <ol>
+                                                <li>
+                                                    <input id="Visa" type="radio" name="Card"/>
+                                                    <label for="Visa">Visa</label>
+                                                </li>
+                                                <li>
+                                                    <input id="amex" type="radio" name="Card"/>
+                                                    <label for="amex">AmEX</label>
+                                                </li>
+                                                <li>
+                                                    <input id="mastercard" type="radio" name="Card"/>
+                                                    <label for="Mastercard">Master Card</label>
+                                                </li>
+                                            </ol>
+                                    </fieldset>
+                                </li>
+                            <li>
+                                <label for="cardnumber">Card Number</label>
+                                <input id="cardnumber" type="number"/>
+                            </li>
+                            <li>
+                                <label for="securitycode">Security Code</label>
+                                <input id="securitycode" type="number"/>
+                            </li>
+                            <li>
+                                <label for="nameoncard">Name On card</label>
+                                <input id="nameoncard" type="text" placeholder="Exact name on card"/>
+                            </li>
+                        </ol>
+                    </fieldset>
+                    <fieldset>
+                        <button type="submit">Buy it!!</button>
+                    </fieldset>
+                </form>
+        </body>
+</html>
