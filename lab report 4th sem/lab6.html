@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digital clock</title>
+    <script>
+        setInterval(displayTime,1000);
+        function displayTime(){
+            Time = new Date();
+            hour = Time.getHours();
+            minutes = Time.getMinutes();
+            seconds = Time.getSeconds();
+            meridiem ='AM';
+            if(hour > 12){
+                hour = hour-12;
+                meridiem  = 'PM';
+            }
+            if(hour<10){
+                hour="0"+hour;
+            }
+            if(hour == 0){
+                hour = 12;
+                meridiem  = 'AM';
+            }
+            if(minutes<10){
+                minutes="0"+minutes;
+            }
+            if(seconds<10){
+                seconds="0"+seconds;
+            }
+            showTime = hour+":"+minutes+":"+seconds+" "+meridiem ;
+            document.getElementById("clock").innerHTML=showTime;
+
+        }
+    </script>
+</head>
+<body>
+    <div id="clock" onload="displayTime()"></div>
+</body>
+</html>

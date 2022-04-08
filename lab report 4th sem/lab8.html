@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Document</title>
+    </head>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+			$("#check").click(function() {
+				var number = $("#number").val();
+                if(number==""){
+                    alert("Input cannot be empty");
+                }
+				else if (number % 2 == 0) {
+					alert("Even number");
+				} else {
+					alert("Odd number");
+				}
+			});
+		});
+    </script>
+    <body>
+        <input type="number" id="number" placeholder="Enter a number" />
+        <button id="check">submit</button>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery button hide/show</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#hide").click(function(){
+                    $("p").hide();
+                });
+
+                $("#show").click(function(){
+                    $("p").show();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button id="hide">Click to hide</button>
+        <button id="show" >Click to display</button>
+
+        <p>Hello, This paragraph can be hidden and shown using above buttons.</p>
+    </body>
+</html>

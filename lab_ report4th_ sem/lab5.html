@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sum javascript</title>
+        <script>
+            function sum(){
+                operand1 = parseInt(document.getElementById('value1').value);
+                operand2 = parseInt(document.getElementById('value2').value);
+    
+                sum = operand1 + operand2 ;
+                
+                document.getElementsByTagName('h2')[0].innerHTML = sum ;
+    
+            }
+        </script>
+    </head>
+    <body>
+        <input type="number"  id="value1" placeholder="Enter first number">
+        <input type="number"  id="value2" placeholder="Enter second number">
+        <button onclick="sum()">Sum</button>
+        <h2></h2>
+    </body>
+</html>
