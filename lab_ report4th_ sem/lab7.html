@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Cookie</title>
+        <title>Fetch From cookies</title>
         <script>
-            document.cookie = "username=Nhujan Maharjan; expires=Sat, 9 April 2022 12:00:00 UTC";
-            x = document.cookie;
-
-            document.getElementsByTagName('h1')[0].innerHTML = x;
+            function click_me(){
+                document.cookie = "username = Nhujan Maharjan;";
+                decodedCookie = decodeURIComponent(document.cookie);
+                text = decodedCookie.split(';');
+                value= "";
+                for (var key = 0; key < text.length; key++) {
+                    value = text[key].split('=');
+                }
+                h1 = document.getElementsByTagName("h1");
+                h1[0].innerHTML= "Your "+value[0]+" is "+ value[1];
+            }
         </script>
     </head>
     <body>
         <h1></h1>
+        <button onclick="click_me()">click me</button>
     </body>
 </html>
